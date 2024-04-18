@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:textColor="@color/black"
+        android:textColorHint="#595959"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corners"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:textColorHint="#595959"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corners"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#595959"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corners"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#595959"
+        android:background="@drawable/rounded_corners"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update to Database"/>
+
+    <Button
+        android:textColor="@color/white"
+        android:backgroundTint="#4C4C4C"
+        android:id="@+id/btn_db"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Page"/>
+
+    <Button
+        android:textColor="@color/white"
+        android:backgroundTint="#4C4C4C"
+        android:id="@+id/btn_delete"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Page"
+        />
+
+    <Button
+        android:textColor="@color/white"
+        android:backgroundTint="#4C4C4C"
+        android:id="@+id/btn_retrieve"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrieve Page"/>
+
+
+
+
+</LinearLayout>
