@@ -28,6 +28,16 @@ public class Create extends AppCompatActivity {
 
         Button update_dataPage = (Button) findViewById(R.id.btn_update);
         Button retrieve_dataPage = (Button) findViewById(R.id.btn_retrieve);
+        Button delete_dataPage = (Button) findViewById(R.id.btn_delete);
+
+        delete_dataPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),
+                        Delete.class);
+                startActivity(intent);
+            }
+        });
 
         update_dataPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +73,7 @@ public class Create extends AppCompatActivity {
                 String email = txt_email.getText().toString();
 
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-                String url = "http://192.168.0.108/android_crud/create.php";
+                String url = "http://192.168.1.95/android_crud/create.php";
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override

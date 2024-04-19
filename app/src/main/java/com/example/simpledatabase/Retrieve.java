@@ -35,20 +35,6 @@ public class Retrieve extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrieve);
 
-        Button update_dataPage = (Button) findViewById(R.id.btn_update);
-        Button retrieve_dataPage = (Button) findViewById(R.id.btn_retrieve);
-
-        update_dataPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Update.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
         EditText txt_id = (EditText) findViewById(R.id.txt_id);
         TextView lbl_username =findViewById(R.id.txt_username);
         TextView lbl_password =findViewById(R.id.txt_password);
@@ -60,12 +46,9 @@ public class Retrieve extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 String id = txt_id.getText().toString().trim();
-
-
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-                String url = "http://192.168.0.108/android_crud/retrieve.php";
+                String url = "http://192.168.1.95/android_crud/retrieve.php";
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
@@ -91,7 +74,7 @@ public class Retrieve extends AppCompatActivity {
                             }
                         }catch(JSONException e){
                             e.printStackTrace();
-                            Toast.makeText(Retrieve.this, "Error in Response", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Retrieve.this, "Data Not Available", Toast.LENGTH_SHORT).show();
                             System.out.print(response);
                         }
 

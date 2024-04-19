@@ -79,35 +79,6 @@
         android:layout_height="wrap_content"
         android:text="Update to Database"/>
 
-    <Button
-        android:textColor="@color/white"
-        android:backgroundTint="#4C4C4C"
-        android:id="@+id/btn_db"
-        android:layout_marginTop="60dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Create Page"/>
-
-    <Button
-        android:textColor="@color/white"
-        android:backgroundTint="#4C4C4C"
-        android:id="@+id/btn_delete"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Delete Page"
-        />
-
-    <Button
-        android:textColor="@color/white"
-        android:backgroundTint="#4C4C4C"
-        android:id="@+id/btn_retrieve"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Retrieve Page"/>
-
-
 
 
 </LinearLayout>
